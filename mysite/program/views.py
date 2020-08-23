@@ -3,5 +3,5 @@ from django.utils import timezone
 
 # Create your views here.
 
-def todo_list(request):
-    return render(request, 'todo/todo_list.html')
+def program_list(request):
+    return render(request, 'program/program_list.html')
