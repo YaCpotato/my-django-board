@@ -1,7 +1,7 @@
 {% load static %}
 <html>
     <head>
-        <title>My QOL</title>
+        <title>Exciting Python</title>
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/css/uikit.min.css" />
 
@@ -12,25 +12,23 @@
     <body>
         <div class="uk-position-relative">
             <div class="uk-position-top">
-                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <nav class="uk-navbar-container uk-margin" uk-navbar>
                     <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
                         <ul class="uk-navbar-nav">
-                            <li><a href="#">Item</a></li>
                             <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-header">Header</li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-divider"></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
+                                <a href="#">
+                                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                                    Features
+                                </a>
                             </li>
                         </ul>
+
+                        <div class="uk-navbar-item">
+                            <div>Some <a href="#">Link</a></div>
+                        </div>
                     </div>
                 </nav>
                 <div class="content container">
