@@ -4,8 +4,8 @@
 <div class="uk-child-width-1-5@s uk-grid-match uk-margin-left uk-padding" uk-grid>
     {% for program in programs %}
         <div class="uk-card uk-card-default uk-card-body uk-margin-left">
-            <h3 class="uk-card-title">default</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h3 class="uk-card-title">{{ program.name }}</h3>
+            <p>{{ program.discription }}</p>
         </div>
     {% endfor %}
 </div>
