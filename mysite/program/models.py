@@ -17,7 +17,6 @@ class Course(models.Model):
     program = models.ForeignKey('program.Program', on_delete=models.CASCADE, related_name='courses')
     name = models.CharField(max_length=64)
     discription = models.CharField(max_length=256)
-    end = models.DateField(null=True,blank=True)
     created_date = models.DateTimeField(
             default=timezone.now,
             editable=False
