@@ -3,10 +3,14 @@
 {% block content %}
 <div class="uk-child-width-1-5@s uk-grid-match uk-margin-left uk-padding" uk-grid>
     {% for program in programs %}
-        <div class="uk-card uk-card-default uk-card-body uk-margin-left">
-            <h3 class="uk-card-title">{{ program.name }}</h3>
-            <p>{{ program.discription }}</p>
-        </div>
+    <a href="{% url 'program_detail' pk=program.pk %}">
+	    <div class="uk-card uk-card-default uk-card-body uk-margin-left uk-height-medium">
+	        <div class="uk-height-small uk-overflow-hidden">
+	            <h3 class="uk-card-title">{{ program.name }}</h3>
+	            <p>{{ program.discription }}</p>
+	        </div>
+	    </div>
+	</a>
     {% endfor %}
 </div>
 {% endblock content %}
