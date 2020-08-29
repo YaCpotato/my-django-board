@@ -1,25 +1,12 @@
 {% extends 'program/base.html' %}
 
 {% block content %}
-    <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href=""></a></li>
-                <li class="uk-parent"><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+<div class="uk-child-width-1-2@s uk-grid-collapse" style="height:80vh;" uk-grid>
+        <div class="uk-tile uk-tile-default uk-height-1-1">
+            <p class="uk-h4">Default</p>
         </div>
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href=""></a></li>
-            <li class="uk-parent"><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href=""></a></li>
-                <li class="uk-parent"><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+        <div class="uk-tile uk-tile-muted">
+            <p class="uk-h4">Muted</p>
         </div>
-    </nav>
+</div>
 {% endblock %}
