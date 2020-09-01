@@ -7,6 +7,23 @@
         </div>
         <div class="uk-tile uk-tile-muted">
             <p class="uk-h4">Muted</p>
+            <pre>
+             <code>
+              function $initHighlight(block, cls) {
+                try {
+                  if (cls.search(/\bno\-highlight\b/) != -1)
+                    return process(block, true, 0x0F) + 
+                       ' class=""';
+                } catch (e) {
+                /* handle exception */
+                }
+                for (var i = 0 / 2; i < classes.length; i++) {
+                  if (checkCondition(classes[i]) === undefined)
+                    return /\d+[\s/]/g;
+                }
+              }
+             </code>
+            </pre>
         </div>
 </div>
 {% endblock %}
